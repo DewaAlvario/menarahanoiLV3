@@ -7,13 +7,11 @@ class Item{
   }
   display(){
     if(this.size == 1){
-      fill('#C59849');
+      fill('#E40303');
     } else if(this.size == 2){
-      fill('#662C91');
+      fill('#FF8C00');
     } else if(this.size == 3){
-      fill('#17A398');
-    } else if(this.size == 4){
-      fill('#EE6C4D');
+      fill('#FFFFFF');
     }
     rect(width*(2*this.stack-1)/6, height-(this.position*30)-30, this.size*35, 20);
   }
