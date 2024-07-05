@@ -38,18 +38,21 @@ function draw() {
     fill(255);
   }
   rect(width / 3 - width / 6, height * 2 / 3, 20, height * 2 / 3);
+  text('A', width / 3 - width / 6, height * 1 / 4);
   if (high && w == 2) {
     fill(140);
   } else {
     fill(255);
   }
   rect(width * 2 / 3 - width / 6, height * 2 / 3, 20, height * 2 / 3);
+  text('B', width * 2 / 3 - width / 6, height * 1 / 4);
   if (high && w == 3) {
     fill(140);
   } else {
     fill(255);
   }
   rect(width - width / 6, height * 2 / 3, 20, height * 2 / 3);
+  text('C', width - width / 6, height * 1 / 4);
   for (let every of stacks) {
     for (let all of every) {
       all.display();
